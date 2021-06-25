@@ -16,7 +16,7 @@ jobs:
       packages: write
     steps:
       - name: Enviroments
-        run: echo ${{ secrets.GPR_USERNAME }}
+        run: echo chej ${{ secrets.GPR_USERNAME }}
       - uses: actions/checkout@v2
       - name: Set up JAVA
         uses: actions/setup-java@v2
