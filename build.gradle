@@ -1,0 +1,25 @@
+allprojects {
+    apply plugin: "java-library"
+    apply plugin: "maven-publish"
+}
+subprojects {
+    publishing {
+        repositories {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/jakub-spiewak/ash-libs")
+                credentials {
+                    username = System.getenv("GITHUB_USERNAME") ?: project.findProperty("GITHUB_USERNAME")
+                    password = System.getenv("GITHUB_TOKEN") ?: project.findProperty("GITHUB_TOKEN")
+                }
+            }
+        }
+        publications {
+            //noinspection GroovyAssignabilityCheck
+            gpr(MavenPublication) {
+                //noinspection GroovyAssignabilityCheck
+                from(components.java)
+            }
+        }
+    }
+}

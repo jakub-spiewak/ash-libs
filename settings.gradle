@@ -1,0 +1,3 @@
+rootProject.name = 'ash-libs'
+
+include 'ash-api-model-lib'
