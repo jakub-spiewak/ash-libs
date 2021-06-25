@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'com.jakubspiewak'
-version = '0.0.1-SNAPSHOT-mail-1'
+version = '0.0.1-SNAPSHOT-mail-2'
 sourceCompatibility = '16'
 
 configurations {

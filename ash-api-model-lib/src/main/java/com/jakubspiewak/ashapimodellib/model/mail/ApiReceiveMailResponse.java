@@ -6,6 +6,7 @@ import java.util.List;
 
 @Data
 public class ApiReceiveMailResponse {
+    private MailConfiguration configuration;
     private String from;
     private String subject;
     private String receiptDate;
