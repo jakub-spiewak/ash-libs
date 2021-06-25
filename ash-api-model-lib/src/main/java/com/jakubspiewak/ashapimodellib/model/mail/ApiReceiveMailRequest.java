@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.List;
 
 @Data
-public class ReceiveMailApiRequest {
+public class ApiReceiveMailRequest {
     private List<String> from;
     private Date minimumReceiptDate;
     private Date maximumReceiptDate;

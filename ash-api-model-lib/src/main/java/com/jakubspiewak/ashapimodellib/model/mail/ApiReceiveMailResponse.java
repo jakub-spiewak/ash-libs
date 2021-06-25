@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class ReceiveMailApiResponse {
+public class ApiReceiveMailResponse {
     private String from;
     private String subject;
     private String receiptDate;
