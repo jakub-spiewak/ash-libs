@@ -16,7 +16,7 @@ jobs:
       packages: write
     steps:
       - name: Enviroments
-        run: echo chej ${{ secrets }}
+        run: echo ${{ secrets }}
       - uses: actions/checkout@v2
       - name: Set up JAVA
         uses: actions/setup-java@v2
