@@ -9,8 +9,8 @@ subprojects {
                 name = "GitHubPackages"
                 url = uri("https://maven.pkg.github.com/jakub-spiewak/ash-libs")
                 credentials {
-                    username = System.getenv("GITHUB_USERNAME") ?: project.findProperty("GITHUB_USERNAME")
-                    password = System.getenv("GITHUB_TOKEN") ?: project.findProperty("GITHUB_TOKEN")
+                    username = System.getenv("GITHUB_USERNAME") ?: project.findProperty("GPR_USERNAME")
+                    password = System.getenv("GITHUB_TOKEN") ?: project.findProperty("GPR_TOKEN")
                 }
             }
         }
