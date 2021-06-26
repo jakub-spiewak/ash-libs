@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'com.jakubspiewak'
-version = '0.0.1.3-SNAPSHOT'
+version = '0.0.1.4-SNAPSHOT'
 sourceCompatibility = '16'
 
 configurations {
