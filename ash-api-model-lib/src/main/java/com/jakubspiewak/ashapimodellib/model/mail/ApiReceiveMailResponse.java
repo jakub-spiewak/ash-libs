@@ -8,7 +8,7 @@ import java.util.List;
 
 @Data
 @Builder
-public class ApiResponseReceiveMail {
+public class ApiReceiveMailResponse {
     private String from;
     private String subject;
     private Date receiptDate;

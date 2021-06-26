@@ -1,5 +1,6 @@
 package com.jakubspiewak.ashapimodellib.model.mail;
 
+import com.jakubspiewak.ashapimodellib.model.util.DateRange;
 import lombok.Builder;
 import lombok.Data;
 
@@ -8,9 +9,7 @@ import java.util.List;
 
 @Data
 @Builder
-public class ApiRequestReceiveMail {
-    private MailConfiguration configuration;
+public class ApiReceiveMailQueryParams {
     private List<String> from;
-    private Date minimumReceiptDate;
-    private Date maximumReceiptDate;
+    private DateRange date;
 }
