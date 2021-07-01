@@ -15,8 +15,8 @@ jobs:
       contents: read
       packages: write
     steps:
-      - uses: actions/delete-package-versions@v1
       - name: Delete older versions
+        uses: actions/delete-package-versions@v1
         with:
           package-name: 'ash-api-model-lib'
       - uses: actions/checkout@v2
