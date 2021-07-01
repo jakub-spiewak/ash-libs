@@ -5,10 +5,16 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+import java.util.List;
+
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ApiReceiveMailRequest {
-    private MailConfiguration configuration;
+public class ApiFetchMailResponse {
+    private String from;
+    private String subject;
+    private Date receiptDate;
+    private List<MailAttachment> attachments;
 }
