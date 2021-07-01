@@ -15,6 +15,10 @@ jobs:
       contents: read
       packages: write
     steps:
+      - uses: actions/delete-package-versions@v1
+      - name: Delete older versions
+        with:
+          package-name: 'ash-api-model-lib'
       - uses: actions/checkout@v2
       - name: Set up JAVA
         uses: actions/setup-java@v2
