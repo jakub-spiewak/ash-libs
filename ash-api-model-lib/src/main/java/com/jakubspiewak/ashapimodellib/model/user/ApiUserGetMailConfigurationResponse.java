@@ -1,10 +1,13 @@
 package com.jakubspiewak.ashapimodellib.model.user;
 
+
 import com.jakubspiewak.ashapimodellib.model.mail.MailConfiguration;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.UUID;
 
 @Data
 @Builder
@@ -12,6 +15,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ApiUserGetMailConfigurationResponse {
 
-    private MailConfiguration configuration;
+    private UUID userId;
+
+    private MailConfiguration mailConfiguration;
 
 }
