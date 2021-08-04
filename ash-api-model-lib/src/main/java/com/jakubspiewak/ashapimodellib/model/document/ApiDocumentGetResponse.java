@@ -12,14 +12,12 @@ import java.util.UUID;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ApiDocumentCreateRequest {
+public class ApiDocumentGetResponse {
+
+    // TODO: Add company info etc.
 
     private Date date;
 
-    private String type;
-
-    private byte[] file;
-
-    private UUID referenceId;
+    private UUID fileId;
 
 }

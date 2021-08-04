@@ -1,25 +1,22 @@
-package com.jakubspiewak.ashapimodellib.model.document;
+package com.jakubspiewak.ashapimodellib.model.file;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
 import java.util.UUID;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ApiDocumentCreateRequest {
+public class ApiFileCreateRequest {
 
-    private Date date;
+    private UUID ownerId;
 
-    private String type;
+    private String fileName;
 
     private byte[] file;
-
-    private UUID referenceId;
 
 }
