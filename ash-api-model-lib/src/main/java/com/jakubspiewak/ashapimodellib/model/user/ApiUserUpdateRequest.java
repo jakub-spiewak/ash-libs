@@ -10,7 +10,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ApiUserUpdateRequest {
-
-    private String password;
-
+  private String password;
 }

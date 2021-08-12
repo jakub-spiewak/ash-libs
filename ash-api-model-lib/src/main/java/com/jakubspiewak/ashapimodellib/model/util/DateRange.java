@@ -15,6 +15,6 @@ import static org.springframework.format.annotation.DateTimeFormat.ISO.DATE;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DateRange {
-    private @DateTimeFormat(iso = DATE) Date min;
-    private @DateTimeFormat(iso = DATE) Date max;
+  private @DateTimeFormat(iso = DATE) Date min;
+  private @DateTimeFormat(iso = DATE) Date max;
 }

@@ -11,5 +11,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ApiUserMailConfigurationRequest {
-    private MailConfiguration configuration;
+  private MailConfiguration configuration;
 }

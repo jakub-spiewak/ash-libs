@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ApiFetchMailRequest {
-    private MailConfiguration configuration;
-    private MailQueryParams query;
+  private MailConfiguration configuration;
+  private MailQueryParams query;
 }

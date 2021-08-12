@@ -13,8 +13,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ApiFetchMailResponse {
-    private String from;
-    private String subject;
-    private Date receiptDate;
-    private List<MailAttachment> attachments;
+  private String from;
+  private String subject;
+  private Date receiptDate;
+  private List<MailAttachment> attachments;
 }

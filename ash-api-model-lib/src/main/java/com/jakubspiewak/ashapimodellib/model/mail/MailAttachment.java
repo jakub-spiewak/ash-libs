@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class MailAttachment {
-    private String name;
-    private byte[] content;
+  private String name;
+  private byte[] content;
 }

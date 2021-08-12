@@ -10,9 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ApiFileGetResponse {
-
     private String fileName;
-
     private byte[] file;
-
 }

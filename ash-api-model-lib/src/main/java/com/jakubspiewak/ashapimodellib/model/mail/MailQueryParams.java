@@ -13,6 +13,6 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class MailQueryParams {
-    private List<String> from;
-    private DateRange date;
+  private List<String> from;
+  private DateRange date;
 }
