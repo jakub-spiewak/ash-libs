@@ -20,4 +20,7 @@ public class ApiDocumentGetResponse {
 
     private UUID fileId;
 
+    private UUID referenceId;
+
+    private String type;
 }
