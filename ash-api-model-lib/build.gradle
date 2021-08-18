@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'com.jakubspiewak'
-version = '0.0.1.16-SNAPSHOT'
+version = '0.0.1.17-SNAPSHOT'
 sourceCompatibility = '16'
 
 configurations {
@@ -18,7 +18,7 @@ repositories {
 
 dependencies {
     // spring
-    implementation 'org.springframework:spring-context:5.3.8'
+    implementation 'org.springframework:spring-context:5.3.9'
 
     // format
     implementation 'com.google.googlejavaformat:google-java-format:1.11.0'

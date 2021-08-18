@@ -10,6 +10,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ApiExpenseCreateRequest {
+
   private String name;
+
   private Float amount;
+
+  private MailExpenseConfig mailConfig;
 }

@@ -11,5 +11,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ApiExpenseGetResponse {
   private String name;
+
   private Float amount;
+
+  private MailExpenseConfig mailConfig;
 }
