@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.UUID;
 
@@ -16,7 +17,7 @@ public class ApiDocumentGetResponse {
 
     // TODO: Add company info etc.
 
-    private Date date;
+    private LocalDate date;
 
     private UUID fileId;
 
