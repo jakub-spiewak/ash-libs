@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.UUID;
 
 @Data
@@ -15,13 +14,13 @@ import java.util.UUID;
 @AllArgsConstructor
 public class ApiDocumentGetResponse {
 
-    // TODO: Add company info etc.
+  // TODO: Add company info etc.
 
-    private LocalDate date;
+  private LocalDate date;
 
-    private UUID fileId;
+  private UUID fileId;
 
-    private UUID referenceId;
+  private UUID referenceId;
 
-    private String type;
+  private String type;
 }

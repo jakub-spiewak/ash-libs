@@ -5,7 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 @Data
@@ -15,6 +15,6 @@ import java.util.List;
 public class ApiFetchMailResponse {
   private String from;
   private String subject;
-  private Date receiptDate;
+  private LocalDate receiptDate;
   private List<MailAttachment> attachments;
 }
