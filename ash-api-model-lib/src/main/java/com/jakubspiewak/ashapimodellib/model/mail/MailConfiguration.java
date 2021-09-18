@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class MailConfiguration {
-  private String mailAddress;
+  private String address;
   private String password;
   private String host;
   private Integer port;
