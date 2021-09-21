@@ -5,11 +5,15 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+import java.util.UUID;
+
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserCredentials {
-  private String username;
-  private String password;
+public class ApiTokenInfo {
+    private UUID userId;
+    private Date expirationDate;
+    private Boolean isExpired;
 }
