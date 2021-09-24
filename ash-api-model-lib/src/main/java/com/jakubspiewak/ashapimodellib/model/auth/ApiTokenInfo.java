@@ -15,5 +15,5 @@ import java.util.UUID;
 public class ApiTokenInfo {
     private UUID userId;
     private Date expirationDate;
-    private Boolean isExpired;
+    private Boolean isAccepted;
 }
