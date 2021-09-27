@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.jakubspiewak.ashdatabaselib.multitenancy.TenantResolverInterceptor,\
+  com.jakubspiewak.ashdatabaselib.multitenancy.WebConfiguration

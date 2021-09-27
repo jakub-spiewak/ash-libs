@@ -1,4 +1,4 @@
-package com.jakubspiewak.ashdatabaselib;
+package com.jakubspiewak.ashdatabaselib.multitenancy;
 
 public class DatabaseContextHolder {
   private static final ThreadLocal<String> contextHolder = new ThreadLocal<>();

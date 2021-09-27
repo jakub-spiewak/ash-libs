@@ -1,10 +1,16 @@
 plugins {
     id 'java-library'
+    id 'org.springframework.boot' version '2.5.2'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 }
 
 group = 'com.jakubspiewak'
-version = '0.0.1.1-SNAPSHOT'
+version = '0.0.1.2-SNAPSHOT'
 sourceCompatibility = '16'
+
+ext {
+    set('springCloudVersion', "2020.0.3")
+}
 
 configurations {
     compileOnly {
@@ -18,10 +24,17 @@ repositories {
 
 dependencies {
     // spring
-    implementation 'org.springframework:spring-context:5.3.9'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
 
 
     // lombok
     compileOnly 'org.projectlombok:lombok:1.18.20'
     annotationProcessor 'org.projectlombok:lombok:1.18.20'
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
 }
