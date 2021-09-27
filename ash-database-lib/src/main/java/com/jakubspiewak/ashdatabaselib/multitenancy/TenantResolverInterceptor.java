@@ -16,18 +16,6 @@ public class TenantResolverInterceptor implements AsyncHandlerInterceptor {
   public boolean preHandle(
       HttpServletRequest request, HttpServletResponse response, Object handler) {
 
-    log.info("FROM INTERCEPTOR: IT'S WORKED");
-    log.info("FROM INTERCEPTOR: IT'S WORKED");
-    log.info("FROM INTERCEPTOR: IT'S WORKED");
-    log.info("FROM INTERCEPTOR: IT'S WORKED");
-    log.info("FROM INTERCEPTOR: IT'S WORKED");
-    log.info("FROM INTERCEPTOR: IT'S WORKED");
-    log.info("FROM INTERCEPTOR: IT'S WORKED");
-    log.info("FROM INTERCEPTOR: IT'S WORKED");
-    log.info("FROM INTERCEPTOR: IT'S WORKED");
-    log.info("FROM INTERCEPTOR: IT'S WORKED");
-    log.info("FROM INTERCEPTOR: IT'S WORKED");
-    log.info("FROM INTERCEPTOR: IT'S WORKED");
     return Optional.ofNullable(request.getHeader("ash-user-id"))
         .map(this::setTenantContest)
         .orElse(true);
@@ -44,6 +32,7 @@ public class TenantResolverInterceptor implements AsyncHandlerInterceptor {
   }
 
   private boolean setTenantContest(String userId) {
+    log.info("Setting user: {}", userId);
     DatabaseContextHolder.setCurrentDatabase(userId);
     return true;
   }
