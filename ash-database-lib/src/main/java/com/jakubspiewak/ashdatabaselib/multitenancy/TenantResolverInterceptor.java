@@ -30,7 +30,7 @@ public class TenantResolverInterceptor implements AsyncHandlerInterceptor {
     log.info("FROM INTERCEPTOR: IT'S WORKED");
     return Optional.ofNullable(request.getHeader("ash-user-id"))
         .map(this::setTenantContest)
-        .orElse(false);
+        .orElse(true);
   }
 
   @Override

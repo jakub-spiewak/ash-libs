@@ -19,6 +19,18 @@ subprojects {
             gpr(MavenPublication) {
                 //noinspection GroovyAssignabilityCheck
                 from(components.java)
+                versionMapping {
+                    //noinspection GroovyAssignabilityCheck
+                    usage('java-api') {
+                        //noinspection GroovyAssignabilityCheck
+                        fromResolutionOf('runtimeClasspath')
+                    }
+                    //noinspection GroovyAssignabilityCheck
+                    usage('java-runtime') {
+                        //noinspection GroovyImplicitNullArgumentCall
+                        fromResolutionResult()
+                    }
+                }
             }
         }
     }
