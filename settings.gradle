@@ -1,3 +1,4 @@
 rootProject.name = 'ash-libs'
 
 include 'ash-api-model-lib'
+include 'ash-database-lib'

@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'com.jakubspiewak'
-version = '0.0.1.25-SNAPSHOT'
+version = '0.0.1.1-SNAPSHOT'
 sourceCompatibility = '16'
 
 configurations {
@@ -19,6 +19,7 @@ repositories {
 dependencies {
     // spring
     implementation 'org.springframework:spring-context:5.3.9'
+
 
     // lombok
     compileOnly 'org.projectlombok:lombok:1.18.20'
