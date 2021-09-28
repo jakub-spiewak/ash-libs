@@ -33,8 +33,8 @@ public class TenantResolverInterceptor implements AsyncHandlerInterceptor {
   }
 
   private boolean setTenantContext(String userId) {
-    log.info("Setting user: {}", userId);
-    DatabaseContextHolder.setCurrentDatabase(userId);
+    final var schemaName = String.format("user_%s", userId);
+    DatabaseContextHolder.setCurrentDatabase(schemaName);
     return true;
   }
 }
