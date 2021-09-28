@@ -10,7 +10,7 @@ import java.util.Optional;
 public class TenantIdentifierResolver implements CurrentTenantIdentifierResolver {
   @Override
   public String resolveCurrentTenantIdentifier() {
-    return Optional.ofNullable(DatabaseContextHolder.getCurrentDatabase()).orElse("ash_users");
+    return Optional.ofNullable(DatabaseContextHolder.getCurrentSchema()).orElse("ash_users");
   }
 
   @Override

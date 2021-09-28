@@ -34,7 +34,7 @@ public class TenantResolverInterceptor implements AsyncHandlerInterceptor {
 
   private boolean setTenantContext(String userId) {
     final var schemaName = String.format("user_%s", userId).replace("-", "_");
-    DatabaseContextHolder.setCurrentDatabase(schemaName);
+    DatabaseContextHolder.setCurrentSchema(schemaName);
     return true;
   }
 }
