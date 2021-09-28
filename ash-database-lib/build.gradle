@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.jakubspiewak'
-version = '0.0.1.5-SNAPSHOT'
+version = '0.0.1.6-SNAPSHOT'
 sourceCompatibility = '16'
 
 configurations {
@@ -21,6 +21,9 @@ repositories {
 dependencies {
     // spring
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // hibernate
+    implementation 'org.hibernate:hibernate-core:5.5.7.Final'
 
     // lombok
     compileOnly 'org.projectlombok:lombok:1.18.20'

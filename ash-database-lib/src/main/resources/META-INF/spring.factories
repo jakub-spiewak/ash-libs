@@ -1,3 +1,6 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.jakubspiewak.ashdatabaselib.multitenancy.TenantResolverInterceptor,\
-  com.jakubspiewak.ashdatabaselib.multitenancy.WebConfiguration
+# uncomment this if autoconfiguration is wanted
+#org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+#  com.jakubspiewak.ashdatabaselib.config.config.TenantConnectionProvider,\
+#  com.jakubspiewak.ashdatabaselib.config.config.TenantIdentifierResolver,\
+#  com.jakubspiewak.ashdatabaselib.config.config.TenantResolverInterceptor,\
+#  com.jakubspiewak.ashdatabaselib.config.config.WebConfiguration,

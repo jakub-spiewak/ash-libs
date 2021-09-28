@@ -1,5 +1,6 @@
-package com.jakubspiewak.ashdatabaselib.multitenancy;
+package com.jakubspiewak.ashdatabaselib.config.config;
 
+import com.jakubspiewak.ashdatabaselib.config.DatabaseContextHolder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.AsyncHandlerInterceptor;
@@ -17,7 +18,7 @@ public class TenantResolverInterceptor implements AsyncHandlerInterceptor {
       HttpServletRequest request, HttpServletResponse response, Object handler) {
 
     return Optional.ofNullable(request.getHeader("ash-user-id"))
-        .map(this::setTenantContest)
+        .map(this::setTenantContext)
         .orElse(true);
   }
 
@@ -31,7 +32,7 @@ public class TenantResolverInterceptor implements AsyncHandlerInterceptor {
     DatabaseContextHolder.clear();
   }
 
-  private boolean setTenantContest(String userId) {
+  private boolean setTenantContext(String userId) {
     log.info("Setting user: {}", userId);
     DatabaseContextHolder.setCurrentDatabase(userId);
     return true;

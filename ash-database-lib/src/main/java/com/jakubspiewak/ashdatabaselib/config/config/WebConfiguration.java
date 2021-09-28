@@ -1,4 +1,4 @@
-package com.jakubspiewak.ashdatabaselib.multitenancy;
+package com.jakubspiewak.ashdatabaselib.config.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
