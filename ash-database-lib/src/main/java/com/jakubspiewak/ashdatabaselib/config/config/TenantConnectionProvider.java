@@ -28,7 +28,7 @@ public class TenantConnectionProvider implements MultiTenantConnectionProvider {
   @Override
   public Connection getConnection(String tenantIdentifier) throws SQLException {
     final var connection = getAnyConnection();
-    connection.createStatement().execute(String.format("SET SCHEMA %s", tenantIdentifier));
+    connection.createStatement().execute(String.format("SET SCHEMA '%s'", tenantIdentifier));
 
     return connection;
   }
