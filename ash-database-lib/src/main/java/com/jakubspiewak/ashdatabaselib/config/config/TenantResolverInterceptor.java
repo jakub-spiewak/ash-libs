@@ -13,11 +13,13 @@ import java.util.Optional;
 @Slf4j
 @Component
 public class TenantResolverInterceptor implements AsyncHandlerInterceptor {
+
+  private static final String ASH_USER_ID_HEADER_NAME = "ash-user-id";
+
   @Override
   public boolean preHandle(
       HttpServletRequest request, HttpServletResponse response, Object handler) {
-
-    return Optional.ofNullable(request.getHeader("ash-user-id"))
+    return Optional.ofNullable(request.getHeader(ASH_USER_ID_HEADER_NAME))
         .map(this::setTenantContext)
         .orElse(true);
   }
