@@ -4,6 +4,7 @@ import com.jakubspiewak.ashdatabaselib.config.config.TenantConnectionProvider;
 import com.jakubspiewak.ashdatabaselib.config.config.TenantIdentifierResolver;
 import com.jakubspiewak.ashdatabaselib.config.config.TenantResolverInterceptor;
 import com.jakubspiewak.ashdatabaselib.config.config.WebConfiguration;
+import com.jakubspiewak.ashexpenseservice.config.HibernateConfig;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.Documented;
@@ -17,6 +18,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Retention(RUNTIME)
 @Documented
 @Import({
+  HibernateConfig.class,
   TenantConnectionProvider.class,
   TenantIdentifierResolver.class,
   TenantResolverInterceptor.class,
