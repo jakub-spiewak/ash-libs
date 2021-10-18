@@ -15,5 +15,7 @@ public class ApiExpenseGetResponse {
 
   private Amount amount;
 
+  private Boolean isPrivate;
+
   private MailExpenseConfig mailConfig;
 }

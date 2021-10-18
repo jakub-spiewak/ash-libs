@@ -15,5 +15,7 @@ public class ApiExpenseCreateRequest {
 
   private Amount amount;
 
+  private Boolean isPrivate;
+
   private MailExpenseConfig mailConfig;
 }
