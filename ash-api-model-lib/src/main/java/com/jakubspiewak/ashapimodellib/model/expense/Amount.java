@@ -9,11 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ApiExpenseCreateRequest {
-
-  private String name;
-
-  private Amount amount;
-
-  private MailExpenseConfig mailConfig;
+public class Amount {
+    private Float net;
+    private Float gross;
 }

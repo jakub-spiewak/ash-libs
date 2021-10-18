@@ -1,9 +1,6 @@
 package com.jakubspiewak.ashapimodellib.model.expense;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.UUID;
 
@@ -16,7 +13,7 @@ public class ApiExpenseGetResponse {
 
   private String name;
 
-  private Float amount;
+  private Amount amount;
 
   private MailExpenseConfig mailConfig;
 }
