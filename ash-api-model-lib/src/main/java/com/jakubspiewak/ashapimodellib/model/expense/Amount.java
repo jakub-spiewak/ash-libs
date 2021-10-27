@@ -12,4 +12,6 @@ import lombok.NoArgsConstructor;
 public class Amount {
     private Float net;
     private Float gross;
+    private Float vat;
+    private String currency;
 }

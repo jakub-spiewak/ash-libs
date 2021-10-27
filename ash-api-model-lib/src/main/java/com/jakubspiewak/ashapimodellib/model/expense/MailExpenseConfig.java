@@ -10,8 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class MailExpenseConfig {
-
-  private String mailAddress;
-
-  private String attachmentPattern;
+    private String mailAddress;
+    private String attachmentPattern;
 }

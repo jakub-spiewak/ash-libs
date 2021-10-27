@@ -10,12 +10,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ApiExpenseCreateRequest {
-
-  private String name;
-
-  private Amount amount;
-
-  private Boolean isPrivate;
-
-  private MailExpenseConfig mailConfig;
+    private String name;
+    private DateRange date;
+    private Amount amount;
+    private Boolean isPrivate;
+    private MailExpenseConfig mailConfig;
 }
