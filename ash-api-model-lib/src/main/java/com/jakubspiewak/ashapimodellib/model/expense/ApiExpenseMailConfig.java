@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class MailExpenseConfig {
+public class ApiExpenseMailConfig {
     private String mailAddress;
     private String attachmentPattern;
 }

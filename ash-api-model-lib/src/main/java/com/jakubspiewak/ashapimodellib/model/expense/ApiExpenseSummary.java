@@ -11,7 +11,8 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ApiExpenseGetResponse {
-    private List<ApiExpense> expenses;
-    private ApiExpenseSummary summary;
+public class ApiExpenseSummary {
+    private ApiExpenseAmount amount;
+    private ApiExpenseDateRange date;
+    private List<ApiExpenseAmount> currency;
 }

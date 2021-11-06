@@ -14,7 +14,7 @@ import static org.springframework.format.annotation.DateTimeFormat.ISO.DATE;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class DateRange {
+public class ApiExpenseDateRange {
     private @DateTimeFormat(iso = DATE)
     LocalDate start;
     private @DateTimeFormat(iso = DATE)

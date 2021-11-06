@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Amount {
+public class ApiExpenseAmount {
     private Float net;
     private Float gross;
     private Float vat;

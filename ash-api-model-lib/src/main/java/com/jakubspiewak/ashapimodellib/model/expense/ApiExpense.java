@@ -5,11 +5,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.UUID;
+
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ApiExpenseCreateRequest {
+public class ApiExpense {
+    private UUID id;
     private String name;
     private ApiExpenseDateRange date;
     private ApiExpenseAmount amount;
