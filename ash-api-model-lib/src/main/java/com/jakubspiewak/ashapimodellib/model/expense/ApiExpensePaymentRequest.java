@@ -5,18 +5,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.UUID;
+import java.time.YearMonth;
+import java.util.List;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ApiExpense {
-    private UUID id;
-    private String name;
-    private ApiExpenseDateRange date;
-    private ApiExpenseAmount amount;
-    private Boolean isPrivate;
+public class ApiExpensePaymentRequest {
     private Boolean isPayed;
-    private ApiExpenseMailConfig mailConfig;
+    private YearMonth month;
 }
